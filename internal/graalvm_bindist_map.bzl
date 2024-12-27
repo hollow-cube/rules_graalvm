@@ -61,6 +61,7 @@ _ComponentDependencies = {
 # Aligned GraalVM distribution versions.
 # buildifier: disable=name-conventions
 _AlignedVersions = {
+    "21.0.5": "23.1.2",
     "23.0.1": "24.1.1",
     "23.0.0": "24.1.0",
     "22.0.2": "24.0.2",
@@ -80,7 +81,7 @@ _AlignedVersions = {
 _LatestVersions = {
     "23": ("23.0.1", "24.1.1"),
     "22": ("22.0.2", "24.0.2"),
-    "21": ("21.0.2", "23.1.2"),
+    "21": ("21.0.5", "23.1.2"),
     "20": ("20.0.2", "23.0.1"),
     "17": ("17.0.8", "23.0.1"),
 }
@@ -88,6 +89,7 @@ _LatestVersions = {
 # VM release versions for calculating prefixes.
 # buildifier: disable=name-conventions
 _VmReleaseVersions = {
+    "21.0.5": "21.0.5+9.1",
     "24.1.1": "23.0.1+11.1",
     "24.1.0": "23+37.1",
     "24.0.2": "22.0.2+9.1",
@@ -113,6 +115,7 @@ _VmReleaseVersions = {
 # VM release versions (for Oracle GVM) for calculating prefixes.
 # buildifier: disable=name-conventions
 _VmReleaseVersionsOracle = {
+    "21.0.5": "21.0.5+9.1",
     "24.1.1": "23.0.1+11.1",
     "24.1.0": "23+37.1",
     "24.0.2": "22.0.2+9.1",
@@ -2754,6 +2757,26 @@ _GRAALVM_BINDIST = {
             "@platforms//cpu:x86_64",
             "@platforms//os:windows",
             "@rules_graalvm//platform/jvm:java23",
+        ],
+    },
+    "oracle_21.0.5_linux-x64_23.1.2": {
+        # Oracle GraalVM 21.0.2 (Java 21), Linux (amd64), Version 23.1.2
+        "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.5_linux-x64_bin.tar.gz",
+        "sha256": "ee6286773c659afeefdf2f989a133e7a631c60897f2263ac183794ee1d6438f4",
+        "compatible_with": [
+            "@platforms//cpu:x86_64",
+            "@platforms//os:linux",
+            "@rules_graalvm//platform/jvm:java21",
+        ],
+    },
+    "oracle_21.0.5_macos-aarch64_23.1.2": {
+        # Oracle GraalVM 21.0.2 (Java 21), macOS (arm64), Version 23.1.2
+        "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.5_macos-aarch64_bin.tar.gz",
+        "sha256": "c1960d4f9d278458bde1cd15115ac2f0b3240cb427d51cfeceb79dab91a7f5c9",
+        "compatible_with": [
+            "@platforms//cpu:aarch64",
+            "@platforms//os:macos",
+            "@rules_graalvm//platform/jvm:java21",
         ],
     },
 }
