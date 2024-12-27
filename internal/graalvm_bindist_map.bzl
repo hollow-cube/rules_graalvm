@@ -2762,7 +2762,7 @@ _GRAALVM_BINDIST = {
     "oracle_21.0.5_linux-x64_23.1.2": {
         # Oracle GraalVM 21.0.2 (Java 21), Linux (amd64), Version 23.1.2
         "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.5_linux-x64_bin.tar.gz",
-        "sha256": "ee6286773c659afeefdf2f989a133e7a631c60897f2263ac183794ee1d6438f4",
+        "sha256": "c1960d4f9d278458bde1cd15115ac2f0b3240cb427d51cfeceb79dab91a7f5c9",
         "compatible_with": [
             "@platforms//cpu:x86_64",
             "@platforms//os:linux",
@@ -2772,7 +2772,7 @@ _GRAALVM_BINDIST = {
     "oracle_21.0.5_macos-aarch64_23.1.2": {
         # Oracle GraalVM 21.0.2 (Java 21), macOS (arm64), Version 23.1.2
         "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.5_macos-aarch64_bin.tar.gz",
-        "sha256": "c1960d4f9d278458bde1cd15115ac2f0b3240cb427d51cfeceb79dab91a7f5c9",
+        "sha256": "cb68cb2c796f42f37a56fcd1385d8b86cca12e0b46c5618a5ed3ec7dd2260f6f",
         "compatible_with": [
             "@platforms//cpu:aarch64",
             "@platforms//os:macos",
